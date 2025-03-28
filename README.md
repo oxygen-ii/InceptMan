@@ -1,2 +1,1 @@
 # InceptMan
-InceptMan
