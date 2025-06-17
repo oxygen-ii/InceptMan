@@ -269,8 +269,10 @@ def mandible_cutting(Vhd, V, T):
     #T: template_mandible (.nii.gz)
     #V: binary_volumetric_mandibles (.nii.gz)
     #Vhd: binary_volumetric_healthy_defective_mandible (.nii.gz)
-    x = step1_regis(moving_name, fixed_name)
-    region = step2_selection(x, defect_file)
+    x = step1_regis(T, V)
+    region = step2_selection(x, Vhd)
     p = step3_find_hyperplane(region, x)
-    out = step4_cutting(p, fixed_name)
-    return out
+    out = step4_cutting(p, V)
+    mandible = nib.load(V)
+    segment_mandible = nib.Nifti1Image(out, nifti_mandible.affine, nifti_mandible.header)
+    return segment_mandible
