@@ -265,7 +265,7 @@ def step4_cutting(plane, mandible_file):
         return healthy_array
     return np.logical_and(volume, np.logical_not(restored_array))
 
-def mandible_cutting(Vhd, V, T)
+def mandible_cutting(Vhd, V, T):
     #T: template_mandible (.nii.gz)
     #V: binary_volumetric_mandibles (.nii.gz)
     #Vhd: binary_volumetric_healthy_defective_mandible (.nii.gz)
@@ -273,3 +273,4 @@ def mandible_cutting(Vhd, V, T)
     region = step2_selection(x, defect_file)
     p = step3_find_hyperplane(region, x)
     out = step4_cutting(p, fixed_name)
+    return out
