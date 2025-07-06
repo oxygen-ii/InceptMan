@@ -14,9 +14,18 @@ InceptMan is a deep learning model designed for mandible reconstruction, as prop
 
 # Citation
 
-@article{your2025inceptman,
-  title={InceptMan: An InceptionNeXt-Based Architecture for End-to-End Mandible Reconstruction},
-  author={Your Name et al.},
-  journal={IEEE Access},
-  year={2025}
+Please refer to our full manuscript in IEEE Access. If you use the model, you can cite it with the following bibtex.
+
+```
+@ARTICLE{11048542,
+  author={Kamboonsri, Nattapon and Tantisereepatana, Natdanai and Achakulvisut, Titipat and Vateekul, Peerapon},
+  journal={IEEE Access}, 
+  title={InceptMan: An InceptionNeXt-Based Architecture for End-to-End Mandible Reconstruction}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={108968-108983},
+  keywords={Image reconstruction;Pipelines;Implants;Surgery;Computer architecture;Transformers;Computed tomography;Image segmentation;Deep learning;Three-dimensional displays;Deep learning;volumetric shape completion;mandible reconstruction;automated pipeline;virtual surgical planning},
+  doi={10.1109/ACCESS.2025.3582504}
 }
+```
