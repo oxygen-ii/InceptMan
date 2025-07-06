@@ -1,6 +1,11 @@
 torch
+torchio
 numpy
 nibabel
+SimpleITK
+ants
+dbscan
 monai
 scikit-image
 medpy
+scipy
