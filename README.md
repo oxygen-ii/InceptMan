@@ -26,6 +26,22 @@ python Inference.py --dataset_path */dataset  --save_path */save_model --output_
 ```
 # Mandible cutting algorithm
 
+Our automatic pipeline consists of two main components:
+
+Automated Cutting Pipeline – used to segment the mandible from the input volume using a custom Mandible Cutting Algorithm module.
+
+Reconstruction Pipeline – utilizes a deep learning-based mandible reconstruction model to generate a complete mandible from the segmented input.
+
+![alt text](https://github.com/oxygen-ii/InceptMan/blob/main/image/pipeline.png?raw=true)
+
+💡 Example usage for the Mandible Cutting Algorithm module is provided in this.
+
+```
+python Inference.py --dataset_path */dataset  --save_path */save_model --output_path */output
+```
+
+⚠️ Due to a Non-Disclosure Agreement (NDA), we are unable to share the pretrained weights of our segmentation and reconstruction models, as well as the cutting template used in this study.
+
 # Citation
 
 Please refer to our full manuscript in IEEE Access. If you use the model, you can cite it with the following bibtex.
