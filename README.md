@@ -6,6 +6,11 @@ InceptMan is a deep learning model designed for mandible reconstruction, as prop
 
 # Requirements
 
+Use `pip` to install the requirements as follows:
+```
+!pip install -r requirements.txt
+```
+
 # Train
 
 # Validation
