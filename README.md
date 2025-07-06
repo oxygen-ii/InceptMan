@@ -37,7 +37,8 @@ Reconstruction Pipeline – utilizes a deep learning-based mandible reconstructi
 💡 Example usage for the Mandible Cutting Algorithm module is provided in this.
 
 ```
-python process.py --dataset_path */dataset  --save_path */save_model --output_path */output
+python process.py --template_mandible_path */template_mandible.nii.gz  --binary_volumetric_mandibles_path */mandible.nii.gz,
+                  --binary_volumetric_healthy_defective_mandible_path */healthy&defective mandible.nii.gz, --output_path *output.nii.gz
 ```
 
 ⚠️ Due to a Non-Disclosure Agreement (NDA), we are unable to share the pretrained weights of our segmentation and reconstruction models, as well as the cutting template used in this study.
