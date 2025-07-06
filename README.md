@@ -4,6 +4,12 @@ InceptMan is a deep learning model for mandible reconstruction tasks. The input 
 
 ![alt text](https://github.com/oxygen-ii/InceptMan/blob/main/image/model.png?raw=true)
 
-# Usage Example
+# Requirements
+
+# Train
+
+# Validation
+
+# Mandible cutting algorithm
 
 # Citation
