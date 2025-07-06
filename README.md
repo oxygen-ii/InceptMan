@@ -13,3 +13,10 @@ InceptMan is a deep learning model designed for mandible reconstruction, as prop
 # Mandible cutting algorithm
 
 # Citation
+
+@article{your2025inceptman,
+  title={InceptMan: An InceptionNeXt-Based Architecture for End-to-End Mandible Reconstruction},
+  author={Your Name et al.},
+  journal={IEEE Access},
+  year={2025}
+}
