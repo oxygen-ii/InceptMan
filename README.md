@@ -1,1 +1,5 @@
 # InceptMan
+
+# Usage Example
+
+# Citation
