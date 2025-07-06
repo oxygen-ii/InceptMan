@@ -19,7 +19,11 @@ python Train.py --dataset_path */dataset  --save_path */save_model
 ```
 
 # Validation
+To evaluate our model, run:
 
+```
+python Inference.py --dataset_path */dataset  --save_path */save_model --output_path */output
+```
 # Mandible cutting algorithm
 
 # Citation
