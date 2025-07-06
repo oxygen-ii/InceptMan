@@ -276,3 +276,20 @@ def mandible_cutting(Vhd, V, T):
     mandible = nib.load(V)
     segment_mandible = nib.Nifti1Image(out, nifti_mandible.affine, nifti_mandible.header)
     return segment_mandible
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--template_mandible_path", type=str, help="define template mandible (.nii.gz)")
+    parser.add_argument("--binary_volumetric_mandibles_path", type=str, help="define binary volumetric mandibles (.nii.gz)")
+    parser.add_argument("--binary_volumetric_healthy_defective_mandible_path", type=str, help="define binary volumetric healthy&defective mandible (.nii.gz)")
+    parser.add_argument("--output_path", type=str, help="define output path (.nii.gz)")
+    args = parser.parse_args()
+    return args
+
+def main():
+    args = parse_args()
+    segment_mandible = mandible_cutting(args.binary_volumetric_healthy_defective_mandible_path, args.binary_volumetric_mandible_path, args.template_mandible_path)
+    nib.save(segment_mandible, args.output_path)
+
+if __name__ == "__main__":
+    main()
