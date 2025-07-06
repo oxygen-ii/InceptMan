@@ -12,6 +12,11 @@ Use `pip` to install the requirements as follows:
 ```
 
 # Train
+We use batch size of 2 by default and we show how to train models with 2 GPUs.
+
+```
+python Train.py --dataset_path */dataset  --save_path */save_model
+```
 
 # Validation
 
