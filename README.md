@@ -8,21 +8,21 @@ InceptMan is a deep learning model designed for mandible reconstruction, as prop
 
 Use `pip` to install the requirements as follows:
 ```
-!pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 # Train
 We use batch size of 2 by default and we show how to train models with 2 GPUs.
 
 ```
-python Train.py --dataset_path */dataset  --save_path */save_model
+python train.py --dataset_path */dataset  --save_path */save_model
 ```
 
 # Validation
 To evaluate our model, run:
 
 ```
-python Inference.py --dataset_path */dataset  --save_path */save_model --output_path */output
+python inference.py --dataset_path */dataset  --save_path */save_model --output_path */output
 ```
 # Mandible cutting algorithm
 
